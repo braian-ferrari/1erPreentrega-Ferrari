@@ -1,15 +1,11 @@
 
 .nav {
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    margin: 20px;
     width: 80%;
-    height: 80px;
-    margin: 0 auto;
-    margin-top: 20px;
     border-bottom: solid 1px rgb(189, 186, 186);
     border-color: rgba(177, 177, 1, 0.644);
-    padding: 10px;
-    
 }
 
 .icono {

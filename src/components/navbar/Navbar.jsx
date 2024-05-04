@@ -1,10 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import styles from './Navbar.module.css';
+import LogoNavbar from '../Logo Navbar/LogoNavbar';
+import CartWidget from '../CartWidget/CartWidget';
 
 function Navbar() {
     return (
         <nav className={`navbar navbar-expand-lg  ${styles.nav}`}>
+            <LogoNavbar />
+            
             <div className="container-fluid">
                 <a className="navbar-brand" href="#"></a>
                 <button className={`navbar-toggler ${styles.btn}`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,9 +30,12 @@ function Navbar() {
                         </li>
                     </ul>
                     <form className="d-flex" role="search">
-                        <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+                        <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"/>
                         <button className="btn btn-outline-info" type="submit">Buscar</button>
                     </form>
+                    <div >
+                    <CartWidget />
+                    </div>
                 </div>
             </div>
         </nav>
