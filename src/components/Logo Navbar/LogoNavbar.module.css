@@ -1,0 +1,15 @@
+.logo{
+    position: relative;
+    top: -130px;
+    left:-10px;
+    width: 150px;
+    z-index: 1;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+}
+.logo:hover{
+    transform: scale(1.4);
+}
+
+
