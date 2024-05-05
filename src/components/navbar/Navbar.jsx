@@ -28,6 +28,9 @@ function Navbar() {
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="#">Marcas</a>
                         </li>
+                        <li className="nav-item">
+                            <a className="nav-link active" aria-current="page" href="#"></a>
+                        </li>
                     </ul>
                     <form className="d-flex" role="search">
                         <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"/>
