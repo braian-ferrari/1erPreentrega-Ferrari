@@ -29,7 +29,7 @@ function Navbar() {
                             <a className="nav-link active" aria-current="page" href="#">Marcas</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#"></a>
+                            <a className="nav-link active" aria-current="page" href="#">Nosotros</a>
                         </li>
                     </ul>
                     <form className="d-flex" role="search">
