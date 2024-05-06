@@ -1,6 +1,7 @@
 .logo{
     display: flex;
-    width: 150px;
+    width: 200px;
+    height: 200px;
     
 }
 .logo:hover{
