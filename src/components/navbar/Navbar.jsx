@@ -1,12 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { Link } from 'react-router-dom'; // Importa Link de react-router-dom
 import styles from './Navbar.module.css';
 import LogoNavbar from '../Logo Navbar/LogoNavbar';
 import CartWidget from '../CartWidget/CartWidget';
 
 function Navbar() {
     return (
-        <nav className={`navbar navbar-expand-lg  ${styles.nav}`}>
+        <nav className={`navbar navbar-expand-lg ${styles.nav}`}>
             <LogoNavbar />
 
             <div className="container-fluid">
@@ -17,51 +18,53 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <Link to='/Calzado' className="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Calzado
-                            </a>
+                            </Link>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Hombre</a></li>
-                                <li><a className="dropdown-item" href="#">Mujer</a></li>
-                                <li><a className="dropdown-divider"/></li>
-                                <li><a className="dropdown-item" href="#">Ninos</a></li>
+                                <li><Link to='/CalzadoHombre' className="dropdown-item">Hombre</Link></li>
+                                <li><Link to='/CalzadoMujer' className="dropdown-item">Mujer</Link></li>
+                                <li><Link to='/CalzadoNinios' className="dropdown-item">Niños</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <Link to='/Indumentaria' className="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Indumentaria
-                            </a>
+                            </Link>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Hombre</a></li>
-                                <li><a className="dropdown-item" href="#">Mujer</a></li>
-                                <li><a className="dropdown-divider"/></li>
-                                <li><a className="dropdown-item" href="#">Ninos</a></li>
+                                <li><Link to='/IndumentariaHombre' className="dropdown-item">Hombre</Link></li>
+                                <li><Link to='/IndumentariaMujer' className="dropdown-item">Mujer</Link></li>
+                                <li><Link to='/IndumentariaNinios' className="dropdown-item">Niños</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <Link to='/Marcas' className="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Marcas
-                            </a>
+                            </Link>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Adidas</a></li>
-                                <li><a className="dropdown-item" href="#">Nike</a></li>
-                                <li><a className="dropdown-divider"/></li>
-                                <li><a className="dropdown-item" href="#">Jordan</a></li>
-                                <li><a className="dropdown-item" href="#">Under Armour</a></li>
+                                <li><Link to='/Adidas' className="dropdown-item">Adidas</Link></li>
+                                <li><Link to='/Nike' className="dropdown-item">Nike</Link></li>
+                                <li><Link to='/Jordan' className="dropdown-item">Jordan</Link></li>
+                                <li><Link to='Underarmour' className="dropdown-item">Under Armour</Link></li>
+                                <li><Link to='/Puma' className="dropdown-item">Puma</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <a className={`nav-link active ${styles.font}`} aria-current="page" href="#">Accesorios</a>
+                            <Link to='/Accesorios' className={`nav-link active ${styles.font}`} aria-current="page">
+                                Accesorios
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className={`nav-link active ${styles.font}`} aria-current="page" href="#">Nosotros</a>
+                            <Link to='/Nosotros' className={`nav-link active ${styles.font}`} aria-current="page">
+                                Nosotros
+                            </Link>
                         </li>
                     </ul>
                     <form className="d-flex" role="search">
                         <input className={`form-control me-2 ${styles.input}`} type="search" placeholder="Buscar" aria-label="Buscar" />
                         <button className="btn btn-outline-info" type="submit">Buscar</button>
                     </form>
-                    <div >
+                    <div>
                         <CartWidget />
                     </div>
                 </div>
